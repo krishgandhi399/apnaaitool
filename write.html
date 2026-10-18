@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>नई पोस्ट लिखें | Apna AI Tool</title>
+<meta name="description" content="पोस्ट बनाने का टूल">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light")}catch(e){}</script>
+</head>
+<body data-page="write">
+<main class="wrap"><div class="art wide"><h1>नई पोस्ट लिखें</h1>
+<p class="note">फॉर्म भरें, नीचे तैयार कोड कॉपी करें और posts.js में POSTS = [ के ठीक बाद पेस्ट करें। यह पेज सिर्फ कोड बनाता है, खुद कुछ पब्लिश नहीं करता।</p>
+<div class="wgrid"><form id="wf" onsubmit="return false">
+<label>टाइटल<input id="w-title"></label>
+<label>स्लग (English में, जैसे my-first-post)<input id="w-slug"></label>
+<label>कैटेगरी<input id="w-cat" list="cats"><datalist id="cats"></datalist></label>
+<label>इमोजी<input id="w-emoji" value="📝"></label>
+<label>कवर इमेज का लिंक (वैकल्पिक)<input id="w-img"></label>
+<label>छोटा विवरण (Google में दिखेगा)<textarea id="w-ex" rows="2"></textarea></label>
+<label>आर्टिकल (सादा टेक्स्ट या Markdown: ## हेडिंग, **बोल्ड**, - लिस्ट)<textarea id="w-body" rows="14"></textarea></label>
+</form>
+<div><h2>तैयार कोड</h2><textarea id="w-out" readonly rows="10"></textarea><button class="btn copy" id="w-copy">कोड कॉपी करें</button>
+<h2 class="sec">प्रीव्यू</h2><div id="w-prev" class="body"></div></div></div></div></main>
+<script src="posts.js"></script><script src="app.js"></script>
+</body>
+</html>
